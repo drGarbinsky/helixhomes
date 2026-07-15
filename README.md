@@ -42,3 +42,12 @@ npm run dev
 ```
 
 The dev server runs at `http://localhost:5173/` by default.
+
+## Deployment
+
+Hosted on Cloudflare Pages, connected to this GitHub repo for automatic
+deploys on push to `main`.
+
+- **Build command:** `npm run build`
+- **Build output directory:** `dist`
+- **Framework preset:** Vite
