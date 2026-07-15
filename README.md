@@ -1,32 +1,44 @@
-# React + TypeScript + Vite
+# Helix Homes
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Marketing website for Helix Homes, a real estate development company. The site's
+primary audience is prospective investors evaluating the firm's track record and
+current projects.
 
-Currently, two official plugins are available:
+## Goals
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Showcase current and past development projects (renderings/photos, location,
+  status, unit count, target returns, timeline).
+- Build investor trust through partner biographies and headshots.
+- Give investors a clear path to inquire about opportunities or get in touch.
 
-## React Compiler
+## Partners
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Micah Smith** — Partner
+- **James Funston** — Partner
 
-## Expanding the Oxlint configuration
+## Planned sections
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **Home / Hero** — high-impact intro establishing who Helix Homes is and what
+  it does.
+- **Projects** — portfolio of current and completed developments, each with
+  photos/renderings, key stats, and status (in progress, completed, seeking
+  investment).
+- **About / Team** — bios and headshots for Micah and James.
+- **Investor Relations** — track record, investment approach, and a contact
+  form or inquiry CTA for potential investors.
+- **Contact** — company contact info, office location, social/LinkedIn links.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+Other things worth considering as the site grows: testimonials from past
+investors or partners, a press/news section, and a newsletter or mailing list
+signup for new project announcements.
+
+## Development
+
+This project is built with React, TypeScript, and Vite.
+
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+The dev server runs at `http://localhost:5173/` by default.
