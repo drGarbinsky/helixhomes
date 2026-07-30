@@ -20,7 +20,14 @@ export function Hero() {
           </a>
         </div>
       </div>
-      <div className="elevation" data-label="Founders Yard — Phase II rendering" />
+      <div
+        className="elevation"
+        style={{
+          backgroundImage: 'url(/FoundersYard.svg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      />
     </section>
   )
 }

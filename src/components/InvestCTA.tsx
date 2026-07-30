@@ -10,11 +10,8 @@ export function InvestCTA() {
         </p>
       </div>
       <div className="actions">
-        <a className="btn primary" href="#contact">
-          Request investor deck
-        </a>
-        <a className="btn ghost" href="#contact">
-          Contact partners
+        <a className="btn primary" href="mailto:investors@helixhomes.dev">
+          Request Investor Deck
         </a>
       </div>
     </section>

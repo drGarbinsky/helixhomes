@@ -5,18 +5,24 @@ export function Partners() {
     <section id="partners">
       <div className="section-head">
         <h2>Partners</h2>
-        <a className="all" href="#">
+        <a className="all" href="/partners">
           Full biographies &rarr;
         </a>
       </div>
       <div className="team">
         {partners.map((partner) => (
           <div className="partner" key={partner.name}>
-            <div className="headshot">{partner.initials}</div>
+            <div className="headshot">
+              {partner.photo ? (
+                <img src={partner.photo} alt={partner.name} className="headshot-img" />
+              ) : (
+                partner.initials
+              )}
+            </div>
             <div>
               <h3>{partner.name}</h3>
               <div className="role">{partner.role}</div>
-              <p className="bio">{partner.bio}</p>
+              <p className="bio">{partner.bioShort}</p>
             </div>
           </div>
         ))}

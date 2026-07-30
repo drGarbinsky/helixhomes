@@ -5,14 +5,24 @@ export function Portfolio() {
     <section id="portfolio">
       <div className="section-head">
         <h2>Current &amp; recent projects</h2>
-        <a className="all" href="#">
-          View full portfolio &rarr;
-        </a>
       </div>
       <div className="projects">
         {projects.map((project) => (
           <div className="project-card" key={project.name}>
-            <div className="elevation" data-label={project.name} style={{ position: 'relative' }}>
+            <div
+              className="elevation"
+              data-label={project.name}
+              style={
+                project.image
+                  ? {
+                      position: 'relative',
+                      backgroundImage: `url(${project.image})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                    }
+                  : { position: 'relative' }
+              }
+            >
               <span className={`status ${project.status}`}>{project.statusLabel}</span>
             </div>
             <h3>{project.name}</h3>

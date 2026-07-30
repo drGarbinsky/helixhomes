@@ -1,14 +1,14 @@
 export function Header() {
   return (
     <header className="site">
-      <div className="wordmark">
+      <a className="wordmark" href="/">
         <b>Helix</b> Homes
-      </div>
+      </a>
       <nav className="primary">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#partners">Partners</a>
-        <a href="#invest">Investors</a>
-        <a href="#contact">Contact</a>
+        <a href="/#portfolio">Portfolio</a>
+        <a href="/partners">Partners</a>
+        <a href="/#invest">Investors</a>
+        <a href="/#contact">Contact</a>
       </nav>
     </header>
   )

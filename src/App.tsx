@@ -6,16 +6,19 @@ import { Footer } from './components/Footer'
 import { Partners } from './components/Partners'
 import { Portfolio } from './components/Portfolio'
 import { Spine } from './components/Spine'
-import { Stats } from './components/Stats'
+import { PartnerBios } from './pages/PartnerBios'
 
 function App() {
+  if (window.location.pathname === '/partners') {
+    return <PartnerBios />
+  }
+
   return (
     <>
       <Spine />
       <Header />
       <main>
         <Hero />
-        <Stats />
         <Portfolio />
         <Partners />
         <InvestCTA />
