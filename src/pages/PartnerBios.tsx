@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { partners } from '../data/content'
@@ -9,9 +10,9 @@ export function PartnerBios() {
       <main>
         <div className="section-head">
           <h2>Partner biographies</h2>
-          <a className="all" href="/#partners">
+          <Link className="all" to="/#partners">
             &larr; Back to overview
-          </a>
+          </Link>
         </div>
         <div className="bio-list">
           {partners.map((partner) => (

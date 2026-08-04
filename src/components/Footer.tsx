@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export function Footer() {
   return (
     <footer className="site" id="contact">
@@ -8,11 +10,11 @@ export function Footer() {
       </div>
       <div className="col">
         <h4>Navigate</h4>
-        <a href="/#portfolio">Portfolio</a>
-        <a href="/partners">Partners</a>
-        <a href="/#invest">Investors</a>
+        <Link to="/#portfolio">Portfolio</Link>
+        <Link to="/partners">Partners</Link>
+        <Link to="/#invest">Investors</Link>
       </div>
-    
+
     </footer>
   )
 }

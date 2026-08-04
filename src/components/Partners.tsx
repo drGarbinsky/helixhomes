@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { partners } from '../data/content'
 
 export function Partners() {
@@ -5,9 +6,9 @@ export function Partners() {
     <section id="partners">
       <div className="section-head">
         <h2>Partners</h2>
-        <a className="all" href="/partners">
+        <Link className="all" to="/partners">
           Full biographies &rarr;
-        </a>
+        </Link>
       </div>
       <div className="team">
         {partners.map((partner) => (

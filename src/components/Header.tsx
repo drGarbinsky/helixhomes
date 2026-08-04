@@ -1,14 +1,16 @@
+import { Link } from 'react-router-dom'
+
 export function Header() {
   return (
     <header className="site">
-      <a className="wordmark" href="/">
+      <Link className="wordmark" to="/">
         <b>Helix</b> Homes
-      </a>
+      </Link>
       <nav className="primary">
-        <a href="/#portfolio">Portfolio</a>
-        <a href="/partners">Partners</a>
-        <a href="/#invest">Investors</a>
-        <a href="/#contact">Contact</a>
+        <Link to="/#portfolio">Portfolio</Link>
+        <Link to="/partners">Partners</Link>
+        <Link to="/#invest">Investors</Link>
+        <Link to="/#contact">Contact</Link>
       </nav>
     </header>
   )

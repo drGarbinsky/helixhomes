@@ -1,4 +1,5 @@
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { InvestCTA } from './components/InvestCTA'
@@ -7,12 +8,9 @@ import { Partners } from './components/Partners'
 import { Portfolio } from './components/Portfolio'
 import { Spine } from './components/Spine'
 import { PartnerBios } from './pages/PartnerBios'
+import { ScrollToHash } from './ScrollToHash'
 
-function App() {
-  if (window.location.pathname === '/partners') {
-    return <PartnerBios />
-  }
-
+function Home() {
   return (
     <>
       <Spine />
@@ -24,6 +22,18 @@ function App() {
         <InvestCTA />
         <Footer />
       </main>
+    </>
+  )
+}
+
+function App() {
+  return (
+    <>
+      <ScrollToHash />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/partners" element={<PartnerBios />} />
+      </Routes>
     </>
   )
 }
