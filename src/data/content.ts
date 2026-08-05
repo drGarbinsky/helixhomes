@@ -83,7 +83,7 @@ export const partners: Partner[] = [
 ]
 
 export const spineNodes = [
-  { id: 'hero', label: 'Hero', top: 0 },
+  { id: 'hero', label: 'Intro', top: 0 },
   { id: 'portfolio', label: 'Portfolio', top: 24 },
   { id: 'partners', label: 'Partners', top: 52 },
   { id: 'invest', label: 'Invest', top: 78 },
