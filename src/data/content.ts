@@ -2,29 +2,55 @@ export type ProjectStatus = 'open' | 'progress' | 'done'
 
 export interface Project {
   name: string
+  slug: string
   location: string
   meta: string
   status: ProjectStatus
   statusLabel: string
   image?: string
+  description: string
+  timeline: string
+  address: Address
 }
-
+export interface Address {
+  street: string,
+  city: string,
+  state: string
+}
 export const projects: Project[] = [
   {
     name: 'Northcrest',
+    slug: 'northcrest',
     location: 'Marysville WA',
     meta: '12',
     status: 'progress',
     statusLabel: 'In construction',
     image: '/NorthCrest.png',
+    description:
+      'Northcrest is a 12 unit duplex community across 6 homes. Situated within an established Marysville residential corridor. targeting move-up buyers and small families drawn to the area’s schools and easy access to I-5. Site work and vertical construction are underway, following the same entitlement-to-close playbook the Helix Homes partners have run on prior Snohomish County projects.',
+    timeline: 'Oct 2026',
+    address: {
+      street: '12527 51 st Ave NE',
+      city: ' Marysville',
+      state: 'WA'
+    }
   },
   {
     name: 'Densmore',
+    slug: 'densmore',
     location: 'Marysville WA',
     meta: '24',
     status: 'open',
     statusLabel: 'Open for investment',
     image: '/Densmore.png',
+    description:
+      'The Densmore project is a 1.25 acher lot zoned for mixed use. Currerntly under contract with enitelments work in progress. The vision for this residential project is 24 town homes. Phase 1 schedule to begin in H2 of 2027',
+    timeline: '[Estimated completion TBD]',
+    address: {
+      street: '3724 Densmore Rd.',
+      city: ' Marysville',
+      state: 'WA'
+    }
   },
 ]
 

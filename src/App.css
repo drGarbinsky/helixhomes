@@ -240,6 +240,7 @@ section.hero {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
+  text-decoration: none;
 }
 .project-card .elevation {
   aspect-ratio: 5 / 4;
@@ -363,6 +364,48 @@ section.hero {
   .partner-full .headshot {
     width: 120px;
     height: 120px;
+  }
+}
+
+/* PROJECT DETAIL PAGE */
+.project-detail {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 4rem;
+}
+.project-detail .elevation {
+  aspect-ratio: 5 / 4;
+}
+.project-detail p.bio {
+  color: var(--text-soft);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 1.2rem 0 1.8rem;
+}
+.project-stats {
+  display: flex;
+  gap: 1.5rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.2rem;
+  margin: 0;
+}
+.project-stats dt {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  margin-bottom: 0.3rem;
+}
+.project-stats dd {
+  margin: 0;
+  font-size: 0.95rem;
+}
+@media (max-width: 700px) {
+  .project-detail {
+    grid-template-columns: 1fr;
   }
 }
 

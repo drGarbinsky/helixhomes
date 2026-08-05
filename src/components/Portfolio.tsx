@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { projects } from '../data/content'
 
 export function Portfolio() {
@@ -8,7 +9,7 @@ export function Portfolio() {
       </div>
       <div className="projects">
         {projects.map((project) => (
-          <div className="project-card" key={project.name}>
+          <Link className="project-card" to={`/projects/${project.slug}`} key={project.name}>
             <div
               className="elevation"
               data-label={project.name}
@@ -30,7 +31,7 @@ export function Portfolio() {
               <span>{project.location}</span>
               <span className="n">{project.meta}</span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

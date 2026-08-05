@@ -8,6 +8,7 @@ import { Partners } from './components/Partners'
 import { Portfolio } from './components/Portfolio'
 import { Spine } from './components/Spine'
 import { PartnerBios } from './pages/PartnerBios'
+import { ProjectDetail } from './pages/ProjectDetail'
 import { ScrollToHash } from './ScrollToHash'
 
 function Home() {
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/partners" element={<PartnerBios />} />
+        <Route path="/projects/:slug" element={<ProjectDetail />} />
       </Routes>
     </>
   )
